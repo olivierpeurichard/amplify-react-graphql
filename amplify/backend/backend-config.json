@@ -1,10 +1,25 @@
 {
   "api": {
     "amplifyreactgraphql": {
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "amplifyreactgraphql7371235b"
+        }
+      ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authamplifyreactgraphql7371235b"
+              }
+            }
+          ],
           "defaultAuthentication": {
             "authenticationType": "AWS_IAM"
           }
